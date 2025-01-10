@@ -1,4 +1,4 @@
-# Личный проект «projectTitle» 
+# Личный проект «Cat-energy» 
 
 * Студент: [Vladislav](userProfile).
 * Наставник: `Неизвестно`.
