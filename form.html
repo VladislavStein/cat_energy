@@ -3,31 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Cat-energy</title>
+    <link rel="stylesheet" href="source/css/style.css">
   </head>
   <body class="form__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="#">
           <img class="page-header__logo-image" src="" width="33" height="38" alt="Cat-Energy">
+          <img class="page-header__logo-text" width="101" height="18" src="" alt="">
         </a>
         <nav class="main-navigation">
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list">
-              <li class="main-navigation__item">
-                <a href="index.html">Главная</a>
+              <li class="main-navigation__item main-navigation__item--current">
+                <a href="#">Главная</a>
               </li>
               <li class="main-navigation__item">
                 <a href="catalog.html">Каталог продукции</a>
               </li>
-              <li class="main-navigation__item main-navigation__item--current">
-                <a href="#">Подбор программы</a>
+              <li class="main-navigation__item">
+                <a href="form.html">Подбор программы</a>
               </li>
             </ul>
-            <button class="main-navigation__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
           </div>
         </nav>
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
     </header>
     <main class="form-main">
@@ -41,15 +43,15 @@
             <ul class="parameters-list">
               <li class="parameters-list__item">
                 <label class="title-input" for="name">Имя:*</label>
-                <input class="input-text" id="name" type="text" placeholder="Барсик" required>
+                <input class="input-text" id="name" type="text" name="cat-name" placeholder="Барсик" required>
               </li>
               <li class="parameters-list__item">
                 <label class="title-input" for="weight">Вес (кг):*</label>
-                <input class="input-text" id="weight" type="text" placeholder="7" required>
+                <input class="input-text" id="weight" type="text" name="cat-weight" placeholder="7" required>
               </li>
               <li class="parameters-list__item">
                 <label class="title-input" for="age">Возраст (лет):</label>
-                <input class="input-text" id="age" type="text" placeholder="7">
+                <input class="input-text" id="age" type="text" name="cat-age" placeholder="7">
               </li>
             </ul>
           </fieldset>
@@ -75,11 +77,11 @@
             <ul class="form-contacts-list">
               <li class="form-contacts-list__item">
                 <label class="title-input" for="email">E-mail:*</label>
-                <input class="input-text" id="email" type="text" placeholder="кuklachev@gmail.com" required>
+                <input class="input-text" id="email" type="text" name="email" placeholder="кuklachev@gmail.com" required>
               </li>
               <li class="form-contacts-list__item">
                 <label class="title-input" for="phone">Телефон:*</label>
-                <input class="input-text" id="phone" type="text" placeholder="8 (960) 900-60-90" required>
+                <input class="input-text" id="phone" type="text" name="tel" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
