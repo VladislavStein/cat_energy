@@ -1,3 +1,16 @@
+.choose-program {
+  position: relative;
+}
+
+.choose-program__decorate-bg {
+  min-width: 320px;
+  min-height: 302px;
+  position: absolute;
+  background-color: $primary-color;
+  background-image: url("../img/index-background-mobile.jpg");
+  background-size: 320px 302px;
+}
+
 .choose-program__wrapper {
   width: 280px;
 }
