@@ -1,0 +1,22 @@
+.page-header {
+  background-color: #ffffff;
+  min-width: 320px;
+}
+
+.page-header__wrapper {
+  min-width: 280px;
+  min-height: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  min-width: 186px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header__logo-image {
+  margin-right: auto;
+}

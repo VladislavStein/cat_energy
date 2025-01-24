@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html class="form" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Cat-energy</title>
-    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="form__body">
+  <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="#">
-          <img class="page-header__logo-image" src="" width="33" height="38" alt="Cat-Energy">
+          <img class="page-header__logo-image" width="33" height="38" src="" alt="Cat-Energy">
           <img class="page-header__logo-text" width="101" height="18" src="" alt="">
         </a>
         <nav class="main-navigation">
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list">
               <li class="main-navigation__item main-navigation__item--current">
-                <a href="#">Главная</a>
+                <a href="index.html">Главная</a>
               </li>
               <li class="main-navigation__item">
                 <a href="catalog.html">Каталог продукции</a>
               </li>
               <li class="main-navigation__item">
-                <a href="form.html">Подбор программы</a>
+                <a href="#">Подбор программы</a>
               </li>
             </ul>
           </div>
         </nav>
-        <button class="main-navigation__toggle" type="button">
+        <button class="main-navigation-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
     </header>
-    <main class="form-main">
-      <div class="form-main__wrapper">
-        <h1 class="form-main__title">Подбор программы</h1>
-        <p class="form-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <main class="page-main">
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Подбор программы</h1>
+        <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="worksheet" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="worksheet-parameters">
             <legend class="visually-hidden">Данные кота</legend>
@@ -59,7 +59,7 @@
             <legend class="visually-hidden">Цели по питанию</legend>
             <ul class="aim-list">
               <li class="aim-list__item">
-                <input class="input-radio" id="slimming" type="radio" name="aim" value="Похудение">
+                <input class="input-radio" id="slimming" type="radio" name="aim" value="Похудение" checked>
                 <label class="title-input" for="slimming">Похудение</label>
               </li>
               <li class="aim-list__item">
@@ -77,11 +77,11 @@
             <ul class="form-contacts-list">
               <li class="form-contacts-list__item">
                 <label class="title-input" for="email">E-mail:*</label>
-                <input class="input-text" id="email" type="text" name="email" placeholder="кuklachev@gmail.com" required>
+                <input class="input-text" id="email" type="email" name="email" placeholder="кuklachev@gmail.com" required>
               </li>
               <li class="form-contacts-list__item">
                 <label class="title-input" for="phone">Телефон:*</label>
-                <input class="input-text" id="phone" type="text" name="tel" placeholder="8 (960) 900-60-90" required>
+                <input class="input-text" id="phone" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
@@ -118,6 +118,9 @@
       </div>
       <section class="address-map">
         <h2 class="visually-hidden">Адрес и карта местоположения</h2>
+        <div class="address-map__map">
+
+        </div>
         <div class="address-map__info">
           <p class="address-map__text">
             Приглашаем к сотрудничеству дилеров!
@@ -138,13 +141,19 @@
         </a>
         <ul class="social-networks">
           <li class="social-networks__item">
-            <span class="visually-hidden">VK</span>
+            <a class="social-networks__link" href="#">
+              <span class="visually-hidden">VK</span>
+            </a>
           </li>
           <li class="social-networks__item">
-            <span class="visually-hidden">Instagram</span>
+            <a class="social-networks__link" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
           </li>
           <li class="social-networks__item">
-            <span class="visually-hidden">Facebook</span>
+            <a class="social-networks__link" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
         </ul>
         <a class="page-footer__secondary-logo" href="#">
