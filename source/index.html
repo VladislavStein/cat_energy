@@ -2,42 +2,43 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat-energy</title>
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="#">
-          <img class="page-header__logo-image" width="33" height="38" src="img/logo-mobile-pic.svg" alt="Cat-Energy">
-          <img class="page-header__logo-text" width="101" height="18" src="img/logo-mobile-text.svg" alt="">
+        <a class="page-header__logo page-header__logo-image" href="#">
+          <img class="page-header__logo-img" width="33" height="38" src="img/logo-mobile-pic.svg" alt="Cat-Energy">
         </a>
-        <nav class="main-navigation">
-          <div class="main-navigation__wrapper">
-            <ul class="main-navigation__list">
-              <li class="main-navigation__item main-navigation__item--current">
-                <a href="#">Главная</a>
-              </li>
-              <li class="main-navigation__item">
-                <a href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="main-navigation__item">
-                <a href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <a class="page-header__logo page-header__logo-text" href="#">
+          <img class="page-header__logo-img" width="101" height="18" src="img/logo-mobile-text.svg" alt="">
+        </a>
         <button class="main-navigation-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item main-navigation__item--current">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <section class="choose-program">
         <div class="choose-program__decorate-bg"></div>
         <div class="choose-program__wrapper">
-          <h2 class="choose-program__title medium-titles">Функциональное питание для котов</h2>
+          <h2 class="choose-program__title medium-titles">Функциональное<br> питание для котов</h2>
           <p class="choose-program__text">Занялся собой? Займись котом!</p>
-          <img class="choose-program__img-logo" src="#" alt="">
+          <img class="choose-program__img-logo" width="280" height="270" src="img/index-can-mobile.png" alt="">
           <a class="choose-program__link" href="#">Подобрать программу</a>
         </div>
       </section>
@@ -57,7 +58,7 @@
               <a class="program-plans__link" href="#">Каталог Slim</a>
             </li>
             <li class="program-plans__item">
-              <h3 class="program-plans__title">Набор массы</h3>
+              <h3 class="program-plans__title program-plans__title--cat-pro">Набор массы</h3>
               <p class="program-plans__text">Заработать авторитет среди дворовых котов и даже собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить
                 необходимые мышцы!
@@ -73,26 +74,28 @@
           <h2 class="advantages__title medium-titles">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <p class="advantages__text">Функциональное питание
-                содержит только полезные
-                питательные вещества.
+              <div class="advantages__icon-wrapper advantages__icon-wrapper--healthy-nutrients"></div>
+              <p class="advantages__text advantages__text--number-1">Функциональное питание<br>содержит только полезные<br>питательные вещества.
               </p>
             </li>
             <li class="advantages__item">
-              <p class="advantages__text">Выпускается в виде порошка,
-              который нужно лишь залить
+              <div class="advantages__icon-wrapper advantages__icon-wrapper--release-form"></div>
+              <p class="advantages__text advantages__text--number-2">Выпускается в виде порошка,<br>
+              который нужно лишь залить<br>
               кипятком и готово.
             </p>
             </li>
             <li class="advantages__item">
-              <p class="advantages__text">Замените один-два приема
-                обычной еды на наше
+              <div class="advantages__icon-wrapper advantages__icon-wrapper--change-meal"></div>
+              <p class="advantages__text advantages__text--number-3">Замените один-два приема<br>
+                обычной еды на наше<br>
                 функциональное питание.
               </p>
             </li>
             <li class="advantages__item">
-              <p class="advantages__text">Уже через месяц наслаждайтесь
-                изменениями к лучшему
+              <div class="advantages__icon-wrapper advantages__icon-wrapper--results"></div>
+              <p class="advantages__text advantages__text--number-4">Уже через месяц<br> наслаждайтесь
+                изменениями<br> к лучшему
                 вашего питомца!
               </p>
             </li>
@@ -109,18 +112,24 @@
               без изнуряющих тренировок! При этом он не менял своих
               привычек и по-прежнему спит по 16 часов в день.
             </p>
-            <dl class="example__list">
-              <dt class="example__number">5 кг</dt>
-              <dd class="example__description">снижение веса</dd>
-              <dt class="example__number">60 дней</dt>
-              <dd class="example__description">затрачено времени</dd>
-            </dl>
-            <dl class="example__items">
-              <dt class="example__desc">Затраты на питание:</dt>
-              <dd class="example__amount">15 000 руб.</dd>
-            </dl>
+            <ul class="example__list">
+              <li class="example__item">
+                <p class="example__number">5 кг</p>
+                <p class="example__description">снижение веса</p>
+              </li>
+              <li class="example__item">
+                <p class="example__number">60 дней</p>
+                <p class="example__description">затрачено времени</p>
+              </li>
+              <li class="example__item example__item--large-cell">
+                <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+              </li>
+            </ul>
           </div>
           <div class="wrapper-with-pricture">
+            <div class="example__img-wrapper">
+
+            </div>
             <div class="example-slider">
               <span class="example-slider__text-from-to">Было</span>
               <div class="example-slider__range">

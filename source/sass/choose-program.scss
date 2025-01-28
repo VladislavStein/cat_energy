@@ -1,16 +1,127 @@
 .choose-program {
   position: relative;
+  min-height: 480px;
+  background-image: url("../img/index-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: auto 302px;
+  margin-bottom: 15px;
 }
 
 .choose-program__decorate-bg {
-  min-width: 320px;
-  min-height: 302px;
+  width: 100%;
+  height: 302px;
   position: absolute;
-  background-color: $primary-color;
-  background-image: url("../img/index-background-mobile.jpg");
-  background-size: 320px 302px;
+  background-color: rgba(104, 183, 56, 0.85);
+
 }
 
 .choose-program__wrapper {
-  width: 280px;
+  position: relative;
+  width: 87%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 27px;
+  box-sizing: border-box;
+}
+
+.choose-program__title {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.choose-program__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.choose-program__img-logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.choose-program__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  background-color: $primary-color;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .choose-program {
+    min-height: 790px;
+    background-image: none;
+  }
+  .choose-program__decorate-bg {
+    display: none;
+  }
+  .choose-program__wrapper {
+    padding-top: 55px;
+    padding-left: 87px;
+    position: relative;
+    width: 92%;
+  }
+  .choose-program__title {
+    color: #000;
+    text-align: start;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .choose-program__text {
+    color: #000;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 49px;
+  }
+  .choose-program__img-logo {
+    position: absolute;
+  }
+  .choose-program__link {
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choose-program {
+    min-height: 600px;
+    margin-bottom: 80px;
+  }
+  .choose-program__wrapper {
+    padding-left: 80px;
+    padding-top: 100px;
+    width: 85%;
+  }
+  .choose-program__decorate-bg {
+    display: block;
+    width: 50%;
+    height: 694px;
+    right: 0;
+    top: -118px;
+  }
 }

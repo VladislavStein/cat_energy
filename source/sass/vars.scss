@@ -1,18 +1,6 @@
-$primary-color: #68B738;
+$primary-color: rgb(104, 183, 56);
 $secondary-color: #f2f2f2;
 
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswaldregular.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;
