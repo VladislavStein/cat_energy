@@ -1,6 +1,8 @@
 .page-footer {
   background-color: #f2f2f2;
   min-height: 158px;
+  min-width: 320px;
+  width: 100%;
 }
 
 .page-footer__wrapper {
@@ -39,6 +41,6 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    width: 85%;
+    width: 1220px;
   }
 }

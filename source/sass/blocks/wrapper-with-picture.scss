@@ -1,0 +1,11 @@
+@media (min-width: $tablet-width) {
+  .wrapper-with-picture {
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper-with-picture {
+    width: 50%;
+  }
+}

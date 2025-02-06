@@ -2,6 +2,10 @@
   min-height: 112px;
 }
 
+.address-map--grey-bg {
+  background-color: #f2f2f2;
+}
+
 .address-map__wrapper {
   width: 87%;
   margin: 0 auto;
@@ -26,7 +30,7 @@
 
 .address-map__address,
 .address-map__city {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #444;
@@ -43,6 +47,10 @@
     padding: 56px 40px;
     box-sizing: border-box;
     grid-template-columns: 180px 180px;
+  }
+  .address-map__wrapper--form {
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .address-map__text {
     font-size: 20px;

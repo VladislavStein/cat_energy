@@ -13,28 +13,24 @@
   display: block;
   width: 24px;
   height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social-networks__item:not(:last-child) {
   margin-right: 35px;
 }
 
-.vk-icon {
+.social-networks__link--vk-icon {
   background-image: url("../img/icon-vk.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.instagram-icon {
+.social-networks__link--instagram-icon {
   background-image: url("../img/icon-instagram.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.facebook-icon {
+.social-networks__link--facebook-icon {
   background-image: url("../img/icon-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 @media (min-width:$tablet-width) {

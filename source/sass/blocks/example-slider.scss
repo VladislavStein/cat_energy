@@ -1,0 +1,34 @@
+.example-slider {
+  display: flex;
+  width: 210px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-slider__text-from-to {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example-slider__range {
+  width: 85px;
+  height: 14px;
+  background-color: lightgreen;
+}
+
+@media (min-width: $tablet-width) {
+  .example-slider {
+    width: 592px;
+    height: 40px;
+
+  }
+  .example-slider__text-from-to {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .example-slider__range {
+    width: 426px;
+  }
+}

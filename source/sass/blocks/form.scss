@@ -1,0 +1,30 @@
+.form__required-text {
+  display: block;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .form__required-text {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 0;
+  }
+  .form__wrapper-parameters-aim {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 200px;
+    margin-bottom: 69px;
+  }
+}

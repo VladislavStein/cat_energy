@@ -17,3 +17,21 @@
   color: #444444;
   background-color: #ffffff;
 }
+
+.page__content-wrapper {
+  max-width: 1220px;
+  width: 87%;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page__content-wrapper {
+    width: 92%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__content-wrapper {
+    width: 85%;
+  }
+}

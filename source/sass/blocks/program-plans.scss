@@ -36,6 +36,7 @@
   text-transform: uppercase;
   text-indent: 70px;
   margin-bottom: 30px;
+  font-weight: 400;
   &::before {
     content: "";
     display: block;
@@ -75,7 +76,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #444;
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial", sans-serif;
   margin-bottom: 38px;
 }
 
@@ -97,7 +98,6 @@
 @media (min-width: $tablet-width) {
   .program-plans {
     margin-bottom: 45px;
-    min-width: 708px;
   }
   .program-plans__wrapper {
     width: 92%;
@@ -154,9 +154,6 @@
     margin-bottom: 70px;
     min-height: 374px;
   }
-  .program-plans__wrapper {
-    width: 85%;
-  }
   .program-plans__list {
     width: 100%;
     display: grid;
@@ -170,8 +167,6 @@
     padding: 77px 52px 59px;
   }
   .program-plans__title {
-    display: flex;
-    width: 467px;
     margin-bottom: 73px;
     margin-left: 150px;
     &::before {

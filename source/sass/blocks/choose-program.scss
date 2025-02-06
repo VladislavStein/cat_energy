@@ -55,7 +55,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   width: 100%;
@@ -116,6 +116,7 @@
     padding-left: 80px;
     padding-top: 100px;
     width: 85%;
+    max-width: 1220px;
   }
   .choose-program__decorate-bg {
     display: block;

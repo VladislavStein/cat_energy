@@ -1,20 +1,28 @@
-@import "page.scss";
-
 @import "vars.scss";
 @import "fonts.scss";
 @import "global.scss";
 
-@import "page-header.scss";
-@import "page-main.scss";
-@import "page-footer.scss";
-
-@import "main-navigation.scss";
-
-@import "choose-program.scss";
-
-@import "program-plans.scss";
-
-@import "advantages.scss";
-@import "example.scss";
-@import "address-map.scss";
-@import "social-networks.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/choose-program.scss";
+@import "blocks/program-plans.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/address-map.scss";
+@import "blocks/social-networks.scss";
+@import "blocks/example-slider.scss";
+@import "blocks/wrapper-with-picture.scss";
+@import "blocks/wrapper-with-text.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-link-order.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/form.scss";
+@import "blocks/form-parameters.scss";
+@import "blocks/form-aim.scss";
+@import "blocks/form-contacts.scss";
+@import "blocks/form-comment.scss";
+@import "blocks/form-additional.scss";
+@import "blocks/button.scss";
