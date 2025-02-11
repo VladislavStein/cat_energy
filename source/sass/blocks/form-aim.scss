@@ -18,6 +18,10 @@
   }
 }
 
+.form-aim__radio {
+  margin: 0;
+}
+
 .form-aim__title-input {
   font-size: 16px;
   color: #222;
@@ -41,5 +45,12 @@
   .form-aim {
     width: 568px;
     margin-bottom: 0;
+  }
+  .form-aim__list {
+    height: 100%;
+    padding: 30px 28px 30px 88px;
+  }
+  .form-aim__title-input {
+    line-height: 30px;
   }
 }

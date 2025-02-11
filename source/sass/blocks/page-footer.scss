@@ -6,8 +6,6 @@
 }
 
 .page-footer__wrapper {
-  width: 87%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -29,7 +27,7 @@
     align-items: center;
   }
   .page-footer__wrapper {
-    width: 92%;
+    min-width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -42,5 +40,6 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1220px;
+    min-width: initial;
   }
 }

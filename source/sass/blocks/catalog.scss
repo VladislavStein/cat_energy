@@ -35,7 +35,7 @@
   padding-right: 40px;
   margin-bottom: 18px;
 }
-.catalog__item--show-more {
+.catalog__item-show-more {
   box-sizing: border-box;
   min-height: 158px;
   padding-top: 53px;
@@ -128,7 +128,7 @@
     .catalog__item-value {
       justify-self: end;
     }
-    .catalog__item--show-more {
+    .catalog__item-show-more {
       width: 324px;
       min-height: 429px;
       margin-top: 80px;
@@ -176,7 +176,7 @@
   .catalog__item {
     width: 245px;
   }
-  .catalog__item--show-more {
+  .catalog__item-show-more {
     width: 245px;
     .catalog__item-link {
       margin: 0;

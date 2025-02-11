@@ -1,28 +1,20 @@
 .choose-program {
   position: relative;
   min-height: 480px;
-  background-image: url("../img/index-background-mobile.jpg");
+  background-image: linear-gradient(90deg, #fff 0%, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url(../../img/index-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: auto 302px;
   margin-bottom: 15px;
-}
-
-.choose-program__decorate-bg {
-  width: 100%;
-  height: 302px;
-  position: absolute;
-  background-color: rgba(104, 183, 56, 0.85);
-
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(90deg, #fff 0%, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url(../../img/index-background-mobile@2x.jpg);
+    background-size: auto 302px;
+  }
 }
 
 .choose-program__wrapper {
   position: relative;
-  width: 87%;
-  margin: 0 auto;
-  padding: 0;
   padding-top: 27px;
-  box-sizing: border-box;
 }
 
 .choose-program__title {
@@ -70,9 +62,7 @@
   .choose-program {
     min-height: 790px;
     background-image: none;
-  }
-  .choose-program__decorate-bg {
-    display: none;
+    margin-bottom: 0;
   }
   .choose-program__wrapper {
     padding-top: 55px;
@@ -86,6 +76,7 @@
     margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
+    position: relative;
   }
   .choose-program__text {
     color: #000;
@@ -96,6 +87,12 @@
   }
   .choose-program__img-logo {
     position: absolute;
+    display: block;
+    width: 709px;
+    height: 609px;
+    left: calc(50% - 354px);
+    top: 254px;
+    margin: 0;
   }
   .choose-program__link {
     width: 244px;
@@ -109,8 +106,8 @@
 
 @media (min-width: $desktop-width) {
   .choose-program {
-    min-height: 600px;
-    margin-bottom: 80px;
+    min-height: 300px;
+    margin-bottom: 0;
   }
   .choose-program__wrapper {
     padding-left: 80px;
@@ -118,11 +115,11 @@
     width: 85%;
     max-width: 1220px;
   }
-  .choose-program__decorate-bg {
-    display: block;
-    width: 50%;
-    height: 694px;
-    right: 0;
-    top: -118px;
+  .choose-program__img-logo {
+    width: 552px;
+    height: 499px;
+    top: 10px;
+    left: unset;
+    right: calc(40% - 270px);
   }
 }
