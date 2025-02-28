@@ -12,6 +12,16 @@
   display: grid;
   grid-template-columns: 140px 1fr 1fr;
   min-height: 100px;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    width: 100vw;
+    border-bottom: 1px solid #ebebeb;
+    position: absolute;
+    top: 190px;
+    left: -20px;
+  }
 }
 .catalog__item:not(:last-child) {
   margin-bottom: 44px;
@@ -38,9 +48,19 @@
 .catalog__item-show-more {
   box-sizing: border-box;
   min-height: 158px;
-  padding-top: 53px;
+  padding-top: 60px;
+  position: relative;
   .catalog__item-link {
     margin-bottom: 8px;
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 100vw;
+    position: absolute;
+    left: -20px;
+    top: 190px;
+    border-bottom: 1px solid #ebebeb;
   }
 }
 .catalog__item-title--show-more {
@@ -77,6 +97,20 @@
   grid-column: 1 / -1;
 }
 
+.catalog__button-show-more {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-image: url('../../img/catalog-plus.svg');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  top: 4px;
+  left: calc(50% - 15px);
+}
+
 @media (min-width: $tablet-width) {
     .catalog__list {
       display: flex;
@@ -92,6 +126,9 @@
       grid-template-columns: 1fr 1fr;
       background: linear-gradient(#fff 0px, #fff 80px, #f2f2f2 80px);
       box-sizing: border-box;
+      &::after {
+        display: none;
+      }
     }
     .catalog__item:not(:last-child) {
       margin: 0;
@@ -137,6 +174,18 @@
       row-gap: 14px;
       margin-bottom: 33px;
     }
+    .catalog__item-attribute {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        border-bottom: 1px solid #cdcdcd;
+        width: 250px;
+        bottom: -4px;
+        left: 0;
+      }
+    }
     .catalog__item-value {
       justify-self: end;
     }
@@ -160,6 +209,16 @@
         padding-left: 76px;
         margin-bottom: 87px;
       }
+    }
+    .catalog__button-show-more {
+      width: 60px;
+      height: 60px;
+      background-image: url('../../img/catalog-plus-big.svg');
+      left: calc(50% - 30px);
+      top: 52px;
+    }
+    .catalog__item-show-more::after {
+      display: none;
     }
     .catalog__item-title--show-more {
       padding-left: 93px;
@@ -203,5 +262,8 @@
   .catalog__item-title {
     padding-right: 15px;
     padding-left: 20px;
+  }
+  .catalog__item-attribute::after {
+    width: 169px;
   }
 }

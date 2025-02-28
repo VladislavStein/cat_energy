@@ -29,10 +29,33 @@
 .form-additional__checkbox {
   margin: 0;
 }
+.form-additional__checkbox:checked + .form-additional__label .form-additional__mark::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url(../../img/form-tick.svg);
+  top: 7px;
+  left: 5px;
+}
 .form-additional__title-input {
   font-size: 16px;
   color: #000;
   text-transform: uppercase;
+}
+.form-additional__label {
+  position: relative;
+  padding-left: 46px;
+}
+.form-additional__mark {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  position: absolute;
+  top: -5px;
+  left: 0;
 }
 
 @media (min-width: $tablet-width) {

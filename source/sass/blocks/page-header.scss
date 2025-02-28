@@ -11,6 +11,7 @@
 .page-header--catalog,
 .page-header--form {
   margin-bottom: 27px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .page-header__wrapper {
@@ -43,10 +44,12 @@
   .page-header--form {
     min-height: 52px;
     margin-bottom: 64px;
+    border-bottom: none;
   }
   .page-header--catalog {
     margin-bottom: 64px;
     min-height: 60px;
+    border: none;
   }
   .page-header__logo-img {
     width: 174px;

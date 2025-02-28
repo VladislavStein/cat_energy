@@ -12,6 +12,21 @@
   line-height: 36px;
   font-weight: 400;
   color: #000;
+  position: relative;
+}
+
+.page-main__title--catalog {
+  margin-bottom: 60px;
+}
+
+.page-main__title--catalog::after {
+  content: '';
+  display: block;
+  width: 100vw;
+  border-bottom: 1px solid #ebebeb;
+  position: absolute;
+  left: -20px;
+  top: 75px;
 }
 
 .page-main__title--form {
@@ -44,6 +59,9 @@
     padding-left: 40px;
     padding-right: 305px;
     margin-bottom: 66px;
+  }
+  .page-main__title--catalog::after {
+    display: none;
   }
 }
 

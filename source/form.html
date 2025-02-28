@@ -24,13 +24,13 @@
         </button>
         <nav class="main-navigation">
           <ul class="main-navigation__list">
-            <li class="main-navigation__item main-navigation__item--current">
+            <li class="main-navigation__item">
               <a class="main-navigation__link main-navigation__link--black-text" href="index.html">Главная</a>
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link main-navigation__link--black-text" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-navigation__item">
+            <li class="main-navigation__item main-navigation__item--current">
               <a class="main-navigation__link main-navigation__link--black-text" href="#">Подбор программы</a>
             </li>
           </ul>
@@ -64,16 +64,27 @@
               <legend class="visually-hidden">Цели по питанию</legend>
               <ul class="form-aim__list">
                 <li class="form-aim__item">
-                  <input class="form-aim__radio" id="slimming" type="radio" name="aim" value="Похудение" checked>
-                  <label class="form-aim__title-input" for="slimming">Похудение</label>
+                  <input class="form-aim__radio visually-hidden" id="slimming" type="radio" name="aim" value="Похудение" checked>
+                  <label class="form-aim__label" for="slimming">
+                    <span class="form-aim__title-input">Похудение</span>
+                    <span class="form-aim__radio-mark"></span>
+                  </label>
                 </li>
                 <li class="form-aim__item">
-                  <input class="form-aim__radio" id="bulking" type="radio" name="aim" value="Набор массы">
-                  <label class="form-aim__title-input" for="bulking">Набор массы</label>
+                  <input class="form-aim__radio visually-hidden" id="bulking" type="radio" name="aim" value="Набор массы">
+                  <label class="form-aim__label" for="bulking">
+                    <span class="form-aim__title-input">
+                      Набор массы
+                    </span>
+                    <span class="form-aim__radio-mark"></span>
+                  </label>
                 </li>
                 <li class="form-aim__item">
-                  <input class="form-aim__radio" id="dont-know" type="radio" name="aim" value="Набор массы">
-                  <label class="form-aim__title-input" for="dont-know">Не знаю (нужен ваш совет)</label>
+                  <input class="form-aim__radio visually-hidden" id="dont-know" type="radio" name="aim" value="Набор массы">
+                  <label class="form-aim__label" for="dont-know">
+                    <span class="form-aim__title-input">Не знаю (нужен ваш совет)</span>
+                    <span class="form-aim__radio-mark"></span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -82,11 +93,11 @@
             <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
             <ul class="form-contacts__list">
               <li class="form-contacts__item">
-                <label class="form-contacts__title-input" for="email">E-mail:*</label>
+                <label class="form-contacts__title-input form-contacts__title-input--email" for="email">E-mail:*</label>
                 <input class="form-contacts__input-text" id="email" type="email" name="email" placeholder="кuklachev@gmail.com" required>
               </li>
               <li class="form-contacts__item">
-                <label class="form-contacts__title-input" for="phone">Телефон:*</label>
+                <label class="form-contacts__title-input form-contacts__title-input--phone" for="phone">Телефон:*</label>
                 <input class="form-contacts__input-text" id="phone" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
@@ -101,20 +112,32 @@
             <legend class="form-additional__title">Дополнительно</legend>
             <ul class="form-additional__list">
               <li class="form-additional__item">
-                <input class="form-additional__checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
-                <label class="form-additional__title-input" for="sweetener">Сахарозаменитель</label>
+                <input class="form-additional__checkbox visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
+                <label class="form-additional__label" for="sweetener">
+                  <span class="form-additional__title-input">Сахарозаменитель</span>
+                  <span class="form-additional__mark"></span>
+                </label>
               </li>
               <li class="form-additional__item">
-                <input class="form-additional__checkbox" id="water" type="checkbox" name="water">
-                <label class="form-additional__title-input" for="water">Питьевая вода</label>
+                <input class="form-additional__checkbox visually-hidden" id="water" type="checkbox" name="water">
+                <label class="form-additional__label" for="water">
+                  <span class="form-additional__title-input">Питьевая вода</span>
+                  <span class="form-additional__mark"></span>
+                </label>
               </li>
               <li class="form-additional__item">
-                <input class="form-additional__checkbox" id="milk" type="checkbox" name="milk">
-                <label class="form-additional__title-input" for="milk">Молоко</label>
+                <input class="form-additional__checkbox visually-hidden" id="milk" type="checkbox" name="milk">
+                <label class="form-additional__label" for="milk">
+                  <span class="form-additional__title-input">Молоко</span>
+                  <span class="form-additional__mark"></span>
+                </label>
               </li>
               <li class="form-additional__item">
-                <input class="form-additional__checkbox" id="vitamins" type="checkbox" name="vitamins">
-                <label class="form-additional__title-input" for="vitamins">Витамины</label>
+                <input class="form-additional__checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+                <label class="form-additional__label" for="vitamins">
+                  <span class="form-additional__title-input">Витамины</span>
+                  <span class="form-additional__mark"></span>
+                </label>
               </li>
             </ul>
           </fieldset>
