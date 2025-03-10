@@ -1,0 +1,15 @@
+.no-js .main-navigation {
+  display: block;
+  position: static;
+}
+
+.no-js .main-navigation__item::before {
+  left: -20px;
+}
+
+.no-js .page-header__toggle {
+  background-image: url(../../img/cross.svg);
+  width: 24px;
+  height: 18px;
+  background-size: 18px 18px;
+}

@@ -140,6 +140,13 @@
     height: 511px;
     margin: 0 auto;
     margin-bottom: 25px;
+
+  }
+  .example__img-fat-cat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: inset(0 0 0 50%);
   }
 }
 

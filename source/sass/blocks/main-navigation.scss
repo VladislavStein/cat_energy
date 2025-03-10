@@ -17,9 +17,16 @@
 
 .main-navigation__item {
   padding: 23px 20px;
-  border-top: 1px solid #e6e6e6;
-  &:last-child {
-    border-bottom: 1px solid #e6e6e6;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -45,6 +52,12 @@
     margin-right: 35px;
     border: none;
     position: relative;
+    &::before {
+      display: none;
+    }
+    // &:last-child::after {
+    //   display: none;
+    // }
   }
   .main-navigation__item:last-child {
     margin-right: 0;
@@ -74,5 +87,8 @@
   }
   .main-navigation__link--black-text {
     color: #111;
+  }
+  .main-navigation__list-index .main-navigation__item--current::after {
+    border-bottom: 2px solid #fff;
   }
 }

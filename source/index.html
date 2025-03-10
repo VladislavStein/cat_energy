@@ -10,7 +10,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper content-wrapper">
+      <div class="page-header__wrapper content-wrapper no-js">
         <a class="page-header__logo page-header__logo-image" href="#">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -25,7 +25,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <nav class="main-navigation">
-          <ul class="main-navigation__list">
+          <ul class="main-navigation__list main-navigation__list-index">
             <li class="main-navigation__item main-navigation__item--current">
               <a class="main-navigation__link" href="#">Главная</a>
             </li>
@@ -123,10 +123,12 @@
             </ul>
           </div>
           <div class="wrapper-with-picture">
+
             <picture>
-              <source media="(min-width: 768px)" srcset="img/image-cat-tablet.png 1x, img/image-cat-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-skinny.png">
               <img class="example__img-wrapper" src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" alt="Пухлый кот">
             </picture>
+            <img class="example__img-fat-cat" src="img/cat-fat.png" alt="">
 
             <div class="example-slider">
               <span class="example-slider__text-from-to">Было</span>
