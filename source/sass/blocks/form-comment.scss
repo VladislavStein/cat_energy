@@ -13,6 +13,30 @@
   line-height: 26px;
   color: #000;
   margin-bottom: 37px;
+  display: inline-block;
+  position: relative;
+  &::before {
+    content: '';
+    min-width: 100%;
+    z-index: -1;
+    height: 1.333em;
+    position: absolute;
+    background-color: #fff;
+    left: -20px;
+    right: -20px;
+  }
+  &::after {
+    content: '';
+    width: 100vw;
+    height: 2px;
+    background-color: #68B738;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: 0;
+    z-index: -2;
+    transform: translateX(-20px);
+  }
 }
 
 .form-comment__comment {
@@ -35,10 +59,26 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+    &::before {
+      left: -40px;
+      right: -40px;
+    }
+    &::after {
+      transform: translateX(-70px);
+      top: 20px;
+    }
   }
   .form-comment__comment {
     min-height: 174px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-comment__title {
+    &::after {
+      transform: translateX(-115px);
+    }
   }
 }

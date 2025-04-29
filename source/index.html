@@ -10,7 +10,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper content-wrapper no-js">
+      <div class="page-header__wrapper content-wrapper no-js opened-menu">
         <a class="page-header__logo page-header__logo-image" href="#">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -123,12 +123,14 @@
             </ul>
           </div>
           <div class="wrapper-with-picture">
-
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-skinny.png">
-              <img class="example__img-wrapper" src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" alt="Пухлый кот">
-            </picture>
-            <img class="example__img-fat-cat" src="img/cat-fat.png" alt="">
+            <div class="example__wrapper-cats">
+              <div class="example__wrapper-fat">
+                <img class="example__img-fat" src="img/cat-fat.png" alt="Пухлый кот">
+              </div>
+              <div class="example__wrapper-skinny">
+                <img class="example__img-skinny" src="img/cat-skinny.png" alt="Худой кот">
+              </div>
+            </div>
 
             <div class="example-slider">
               <span class="example-slider__text-from-to">Было</span>
@@ -156,7 +158,11 @@
           </p>
         </div>
         <div class="address-map__map">
-
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x">
+            <img class="address-map__map-img" src="img/map-mobile.jpg" alt="Карта и расположение офиса">
+          </picture>
         </div>
       </section>
     </main>

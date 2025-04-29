@@ -1,3 +1,8 @@
+.opened-menu .page-header__toggle {
+  background-image: url('../../img/cross.svg');
+}
+
+
 .no-js .main-navigation {
   display: block;
   position: static;
@@ -8,8 +13,9 @@
 }
 
 .no-js .page-header__toggle {
-  background-image: url(../../img/cross.svg);
+  background-image: none;
   width: 24px;
   height: 18px;
   background-size: 18px 18px;
 }
+

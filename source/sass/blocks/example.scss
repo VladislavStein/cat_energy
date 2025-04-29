@@ -135,18 +135,20 @@
     font-size: 20px;
     line-height: 20px;
   }
-  .example__img-wrapper {
-    width: 592px;
-    height: 511px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-
+  .example__wrapper-cats {
+    position: relative;
   }
-  .example__img-fat-cat {
+  .example__wrapper-fat {
     position: absolute;
     top: 0;
     left: 0;
-    clip-path: inset(0 0 0 50%);
+    width: 52%;
+    overflow: hidden;
+    background-image: linear-gradient(#fff 201px, #eaeaea 201px, #eaeaea 100%);
+    z-index: 2;
+  }
+  .example__img-skinny {
+    transform: translateX(110px);
   }
 }
 
@@ -189,5 +191,9 @@
   .example__img-wrapper {
     margin: 0;
     margin-bottom: 25px;
+  }
+  .example__wrapper-fat {
+    width: 61%;
+    background-image: linear-gradient(#fff 169px, #eaeaea 169px, #eaeaea 100%);
   }
 }

@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="page-header page-header--catalog">
-      <div class="page-header__wrapper content-wrapper">
+      <div class="page-header__wrapper content-wrapper no-js opened-menu">
         <a class="page-header__logo page-header__logo-image" href="#">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -244,7 +244,11 @@
           </p>
         </div>
         <div class="address-map__map">
-
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x">
+            <img class="address-map__map-img" src="img/map-mobile.jpg" alt="Карта и расположение офиса">
+          </picture>
         </div>
       </section>
     </main>
