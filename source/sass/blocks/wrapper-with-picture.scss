@@ -1,0 +1,14 @@
+@media (min-width: $tablet-width) {
+  .wrapper-with-picture {
+    position: relative;
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper-with-picture {
+    width: 50%;
+    background: linear-gradient(#fff 0%, #fff 179px, #eaeaea 179px, #eaeaea 100%);
+  }
+}

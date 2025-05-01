@@ -1,0 +1,125 @@
+.advantages {
+  margin-bottom: 50px;
+}
+
+.advantages__wrapper {
+  width: 87%;
+  margin: 0 auto;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
+  line-height: 40px;
+  color: #000;
+}
+
+.advantages__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.advantages__item {
+  margin: 0;
+  padding-left: 80px;
+  min-height: 60px;
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 60px;
+    height: 60px;
+    background-color: $primary-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages__item--healthy-nutrients::before {
+  background-image: url("../../img/icon-leaf.svg");
+}
+
+.advantages__item--release-form::before {
+  background-image: url("../../img/icon-tub.svg");
+}
+
+.advantages__item--change-meal::before {
+  background-image: url("../../img/icon-eat.svg");
+}
+
+.advantages__item--results::before {
+  background-image: url("../../img/icon-alarm.svg");
+}
+
+.advantages__text {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    width: 92%;
+  }
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+  .advantages__list {
+    padding: 0;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 35px;
+    column-gap: 135px;
+    counter-reset: number;
+  }
+  .advantages__item {
+    width: 250px;
+    min-height: 280px;
+    padding: 0;
+    padding-top: 110px;
+    padding-bottom: 55px;
+    box-sizing: border-box;
+    &::after {
+      content: counter(number);
+      counter-increment: number;
+      color: #f2f2f2;
+      font-size: 280px;
+      line-height: 280px;
+      position: absolute;
+      top: -35px;
+      left: 120px;
+      font-family: "Oswald", "Arial", sans-serif;
+      z-index: -1;
+    }
+  }
+  .advantages__item:not(:last-child) {
+    margin: 0;
+  }
+  .advantages__item::before {
+    top: 0;
+    left: 0;
+  }
+  .advantages__text {
+    font-size: 16px;
+    line-height: 24px;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    width: 85%;
+  }
+  .advantages__list {
+    column-gap: 73px;
+  }
+}
