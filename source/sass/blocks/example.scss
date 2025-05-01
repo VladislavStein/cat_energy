@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  min-height: 625px;
+  min-height: 550px;
   padding-top: 25px;
   padding-bottom: 40px;
 }
@@ -88,11 +88,54 @@
   background-color: transparent;
 }
 
+.example__img-fat {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.example__img-skinny {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .example {
-    background:
-      linear-gradient(#fff 0%, #fff 60%, #eaeaea 60%, #eaeaea 100%);
-    padding-bottom: 56px;
+    padding-bottom: 0;
+    background: linear-gradient(to bottom, #fff 0%, #fff 60%, #eaeaea 60%);
+  }
+  .example__wrapper {
+    background: none;
+    padding-bottom: 40px;
+  }
+  .example__wrapper-cats {
+    position: relative;
+    display: grid;
+    grid-template-columns: 708px;
+    margin: 0 auto;
+  }
+  .example__wrapper-fat {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 52%;
+    overflow: hidden;
+    z-index: 2;
+    background: linear-gradient(to bottom, #fff 0%, #fff 36%, #eaeaea 36%);
+
+  }
+  .example__wrapper-skinny {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 1;
+  }
+  .example__img-fat {
+    width: 592px;
+    height: 511px;
+    transform: translateX(44px)
+  }
+  .example__img-skinny {
+    display: block;
+    height: 511px;
+    transform: translateX(110px)
   }
   .example__title {
     font-size: 60px;
@@ -135,32 +178,17 @@
     font-size: 20px;
     line-height: 20px;
   }
-  .example__wrapper-cats {
-    position: relative;
-  }
-  .example__wrapper-fat {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 52%;
-    overflow: hidden;
-    background-image: linear-gradient(#fff 201px, #eaeaea 201px, #eaeaea 100%);
-    z-index: 2;
-  }
-  .example__img-skinny {
-    transform: translateX(110px);
-  }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    background:
-      linear-gradient(#fff 0%, #fff 30%, #eaeaea 30%, #eaeaea 100%);
-      padding-bottom: 0;
+    background: linear-gradient(to bottom, #fff 0%, #fff 32%, #eaeaea 32%);
+    padding-bottom: 0;
   }
   .example__wrapper {
     display: flex;
     align-items: center;
+    padding-bottom: 70px;
   }
   .example__title {
     margin-bottom: 146px;
@@ -193,7 +221,7 @@
     margin-bottom: 25px;
   }
   .example__wrapper-fat {
-    width: 61%;
-    background-image: linear-gradient(#fff 169px, #eaeaea 169px, #eaeaea 100%);
+    width: 52%;
+    background-image: linear-gradient(#fff 179px, #eaeaea 179px, #eaeaea 100%);
   }
 }
